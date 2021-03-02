@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: Creating User to Login
-      run: sudo useradd -m Area69Lab && sudo adduser Area69Lab sudo && echo 'Area69Lab:Area69Lab' | sudo chpasswd
+      run: sudo useradd -m TinCowBoy && sudo adduser TinCowBoy sudo && echo 'TinCowBoy:48694869' | sudo chpasswd
       
       # To Install different Environment replace their commands. by default it Install 'Ubuntu'
       
@@ -29,7 +29,7 @@ jobs:
       # sudo apt update && sudo apt install xfce4 && sudo chmod 777 /home/Area69Lab/ && echo xfce4-session >/home/Area69Lab/.xsession
       
     - name: Installing Desktop Environment (wait for 5 min)
-      run: sudo apt update && sudo apt install ubuntu-desktop
+      run: sudo apt-get install -y ukui-desktop-environment
     - name: Installing Xrdp
       run: sudo apt install xrdp -y && sudo service xrdp restart
     - name: Installing Ngrok
